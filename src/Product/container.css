@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body * {
+  outline: 1px solid red;
+}
+
+#container {
+  width: 90%;
+  height: 500px;
+}
+
+/*# sourceMappingURL=container.css.map */
