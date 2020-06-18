@@ -37,7 +37,7 @@ body * {
 #float-container {
   padding: 20px;
   z-index: -1;
-  background: white;
+  background: #ebebeb;
   position: fixed;
   width: 90%;
   height: 80%;
@@ -45,6 +45,12 @@ body * {
   transition: opacity 0.5s;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 450px) {
+  #float-container {
+    width: 35%;
+    height: 60%;
+  }
 }
 #float-container img {
   width: 100%;
@@ -116,6 +122,7 @@ body * {
 @media (min-width: 450px) {
   #product-container {
     width: 350px;
+    height: 350px;
   }
 }
 #product-container div {
