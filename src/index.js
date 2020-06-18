@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import ProductContainer from './Product/ProductContainer';
 import Navbar from './Navbar/Navbar'

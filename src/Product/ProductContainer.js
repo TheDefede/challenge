@@ -7,10 +7,10 @@ const ProductContainer = ({nombre, alt, imagen, descripcion, precio}) =>{
         <div id="product-container">
             <img src={imagen} alt={alt}/>
             <div>
-                <p className="titulo">{nombre}</p>
+                <p className="titulo">{nombre}</p>{/* {
                 <p className="descripcion">{descripcion}</p>
                 <p className="precio">${precio}</p>
-                <button>Comprar</button>
+                <button>Comprar</button>} */}
             </div>
         </div>
     )
