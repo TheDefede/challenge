@@ -30,6 +30,8 @@ const App = () => {
             <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200" descripcion={faker.lorem.sentence()} precio={faker.commerce.price()}/>
 
             <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200" descripcion={faker.lorem.sentence()} precio={faker.commerce.price()}/>
+                
+            <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200" descripcion={faker.lorem.sentence()} precio={faker.commerce.price()}/>
         </>
     )
 }
