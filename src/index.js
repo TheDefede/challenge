@@ -21,6 +21,9 @@ const App = () => {
             <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
             <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
             <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
+            <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
+            <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
+            <ProductContainer nombre={faker.commerce.productName()} imagen="https://picsum.photos/200"/>
 
           
         </>

@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background: #ebebeb;
+  font-family: helvetica;
 }
 body * {
   /* outline: 1px solid red; */
@@ -51,7 +52,7 @@ body * {
 }
 #float-container .titulo {
   color: #5456f0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
 }
 #float-container .precio {
@@ -74,23 +75,24 @@ body * {
   position: fixed;
   z-index: 1;
   top: 0;
-  background: #9494f7;
+  background: linear-gradient(to right, #86cf94 20%, #4cc1de 80%);
   width: 100%;
   display: flex;
   color: white;
   height: 60px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.4rem;
+  font-weight: 500;
 }
 #navbar div {
   padding: 0 10px;
 }
 
 #product-container {
-  width: 45%;
-  height: 160px;
-  margin: 5px;
+  width: 40%;
+  height: 140px;
+  margin: 15px;
   background: white;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -114,7 +116,7 @@ body * {
 }
 #product-container div .titulo {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
 }
 #product-container img {
