@@ -23,8 +23,56 @@ body * {
   }
 }
 
+#cobertor {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s;
+}
+
+#float-container {
+  padding: 10px;
+  z-index: -1;
+  background: white;
+  position: fixed;
+  width: 90%;
+  height: 329px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#float-container .descripcion {
+  margin: 0;
+  height: 38px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+#float-container .titulo {
+  color: #5456f0;
+  font-size: 1.2rem;
+  margin: 0;
+}
+#float-container .precio {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #5456f0;
+}
+#float-container button {
+  font-size: 1.1rem;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+  background: #9494f7;
+  align-self: center;
+}
+
 #navbar {
   position: fixed;
+  z-index: 1;
   top: 0;
   background: #9494f7;
   width: 100%;
@@ -45,7 +93,6 @@ body * {
   margin: 5px;
   background: white;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  z-index: -1;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -57,33 +104,13 @@ body * {
 }
 #product-container div {
   display: flex;
+  position: relative;
   align-items: center;
   width: 100%;
   height: 50px;
   justify-content: center;
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
-  /*      .descripcion{
-              margin: 0;
-              height: 38px;
-              margin-bottom: 5px;
-              overflow: hidden;
-          }
-       .precio{
-              margin:0;
-              font-size : 1.8rem;
-              color:rgb(84, 86, 240);
-          }               
-          button{
-              font-size: 1.1rem;
-              color: white;
-              height: 30px;
-              width: 100px;
-              border: 0;
-              border-radius: 5px;
-              background: rgb(148, 148, 247);
-              align-self: center;
-          } */
 }
 #product-container div .titulo {
   color: white;
@@ -95,7 +122,6 @@ body * {
   height: auto;
   margin-right: 10px;
   position: absolute;
-  z-index: -1;
 }
 
 /*# sourceMappingURL=container.css.map */

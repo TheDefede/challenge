@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 import "./container.css";
 
+const handleClick = () =>{
+    document.getElementById('cobertor').style.background = 'rgba(0,0,0,0.5)';
+    document.getElementById('cobertor').style.zIndex= '2';
+    document.getElementById('float-container').style.opacity = '1';
+    document.getElementById('float-container').style.zIndex = '3';
+}
+
 const ProductContainer = ({nombre, alt, imagen, descripcion, precio}) =>{
 
+    
     return(
-        <div id="product-container">
+        <div onClick={handleClick} id="product-container">
             <img src={imagen} alt={alt}/>
             <div>
-                <p className="titulo">{nombre}</p>{/* {
-                <p className="descripcion">{descripcion}</p>
-                <p className="precio">${precio}</p>
-                <button>Comprar</button>} */}
+                <p className="titulo">{nombre}</p>
             </div>
         </div>
     )
