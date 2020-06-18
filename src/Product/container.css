@@ -11,10 +11,32 @@ body * {
 }
 
 #root {
-  padding-top: 30px;
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (min-width: 450px) {
+  #root {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  background: #9494f7;
+  width: 100%;
+  display: flex;
+  color: white;
+  height: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.4rem;
+}
+#navbar div {
+  padding: 0 10px;
 }
 
 #product-container {
@@ -45,7 +67,7 @@ body * {
 }
 #product-container div .descripcion {
   margin: 0;
-  height: 40px;
+  height: 38px;
   margin-bottom: 5px;
   overflow: hidden;
 }
