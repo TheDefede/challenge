@@ -1,110 +1,17 @@
-*{
-    box-sizing: border-box;
+
+@mixin dimensions($width:"", $height:"", $minWidth:"", $maxWidth:"", $minHeight:"", $maxHeight:""){
+    width: $width;
+    height: $height;
+    min-width: $minWidth;
+    max-width: $maxWidth;
+    min-height: $minHeight;
+    max-height: $maxHeight;
 }
 
-body{
-    margin: 0;    
-    background: rgb(235, 235, 235);
-    font-family: helvetica;
-    *{
-        /* outline: 1px solid red; */
-    }    
-}
-#root{
-    padding-top: 80px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media (min-width: 450px){
-        width: 70%;
-        margin: 0 auto;
-    }
-}
-#cobertor{
-    width:100vw;
-    height: 100vh;
-    position: fixed;
-    top:0;
-    z-index: -1;
-    background: rgba(0,0,0,0);
-    transition: background 0.5s;
-}
-#float-container{
-    padding: 20px;
-    z-index: -1;
-    background: rgb(235, 235, 235);
-    position: fixed;
-    width: 90%;
-    height: 80%;
-    opacity: 0;
-    transition: opacity 0.5s;
-    display:flex;
-    flex-direction: column;
-    @media (min-width:450px){
-        width: 35%;
-        height: 60%;
-    }
-    img{
-        width: 100%;
-        height: 100%;;
-    }
-    div{
-        margin-top: 15px;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .descripcion{
-            margin: 0;
-            height: 38px;
-            margin-bottom: 5px;
-            overflow: hidden;
-        }
-        .titulo{
-            color:#09a2c9;
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin:0;              
-        }
-        .precio{        
-            margin:0;
-            font-size : 1.8rem;
-            color:#09a2c9;
-        }               
-        button{
-            font-size: 1.1rem;
-            color: white;
-            height: 40px;
-            width: 120px;
-            border: 0;
-            border-radius: 5px;
-            background: #57d470;
-            align-self: center;
-        }
-    }   
-    
-}
-#navbar{
-    position: fixed;
-    z-index:1;
-    top: 0;
-    background: linear-gradient(to right, #86cf94 20%, #4cc1de 80%);
-    width: 100%;
-    display:flex;   
-    color:white;
-    height: 60px;
-    justify-content: flex-start;
-    align-items: center;    
-    font-size: 1.4rem;    
-    font-weight: 500;
-    div{
-        padding: 0 10px;
-    }
-}
 #product-container{
     width: 40%;
-    height: 140px;   
+    min-height: 140px;  
+    min-width: 140px;
     margin: 15px;
     background: white;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
@@ -112,9 +19,9 @@ body{
     display: flex;
     align-items: flex-end;    
     @media (min-width: 450px){
-        width: 350px;
-        height: 350px;
-    }
+        width: 250px;
+        height: 250px;
+    }    
     div{      
         display: flex;
         position: relative;

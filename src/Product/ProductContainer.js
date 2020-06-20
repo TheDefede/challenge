@@ -8,7 +8,7 @@ const handleClick = () =>{
     document.getElementById('float-container').style.zIndex = '3';
 }
 
-const ProductContainer = ({nombre, alt, imagen, descripcion, precio}) =>{
+const ProductContainer = ({nombre, alt, imagen}) =>{
 
     
     return(

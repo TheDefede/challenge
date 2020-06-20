@@ -37,4 +37,44 @@
   position: absolute;
 }
 
-/*# sourceMappingURL=container.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ebebeb;
+  font-family: helvetica;
+}
+body * {
+  /* outline: 1px solid red; */
+}
+
+#root {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 450px) {
+  #root {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+#cobertor {
+  width: 100vw;
+  height: 100vh;
+  min-width: "";
+  max-width: "";
+  min-height: "";
+  max-height: "";
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s;
+}
+
+/*# sourceMappingURL=index.css.map */
