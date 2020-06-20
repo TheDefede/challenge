@@ -16,7 +16,7 @@ const img = () => {
 
 
 const App = () => {
-    const producto = () => faker.commerce.productName();
+    
     return(
         <>
             <Cobertor />

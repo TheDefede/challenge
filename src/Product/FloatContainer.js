@@ -1,6 +1,7 @@
 import React from 'react';
 import "./FloatContainer.css";
-import "./ProductContainer.js";
+
+
 
 const FloatContainer = ({nombre, imagen, alt, descripcion, precio}) =>{
 

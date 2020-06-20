@@ -1,44 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #ebebeb;
-  font-family: helvetica;
-}
-
-body * {
-  /* outline: 1px solid red; */
-}
-
-#root {
-  padding-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media (min-width: 450px) {
-  #root {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-#cobertor {
-  width: 100vw;
-  height: 100vh;
-  min-width: "";
-  max-width: "";
-  min-height: "";
-  max-height: "";
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s;
-}
-
 #product-container {
   width: 40%;
   min-height: 140px;
@@ -50,7 +9,6 @@ body * {
   display: flex;
   align-items: flex-end;
 }
-
 @media (min-width: 450px) {
   #product-container {
     width: 250px;
@@ -67,13 +25,11 @@ body * {
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
 }
-
 #product-container div .titulo {
   color: white;
   font-size: 1rem;
   margin: 0;
 }
-
 #product-container img {
   width: 100%;
   height: auto;
@@ -97,7 +53,6 @@ body * {
   opacity: 0;
   transition: opacity 0.5s;
 }
-
 #float-container img {
   width: 100%;
   height: auto;
@@ -106,7 +61,6 @@ body * {
   min-height: "";
   max-height: "";
 }
-
 #float-container div {
   margin-top: 15px;
   height: 60%;
@@ -114,7 +68,6 @@ body * {
   flex-direction: column;
   justify-content: space-between;
 }
-
 @media (orientation: landscape) and (max-width: 450px) {
   #float-container div {
     height: 100%;
@@ -127,20 +80,17 @@ body * {
   margin-bottom: 5px;
   overflow: hidden;
 }
-
 #float-container div .titulo {
   color: #09a2c9;
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
 }
-
 #float-container div .precio {
   margin: 0;
   font-size: 1.8rem;
   color: #09a2c9;
 }
-
 #float-container div button {
   font-size: 1.1rem;
   color: white;
@@ -152,70 +102,6 @@ body * {
   align-self: center;
 }
 
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
-/*# sourceMappingURL=FloatContainer.scss.map */
 /*# sourceMappingURL=FloatContainer.scss.map */
 
 /*# sourceMappingURL=FloatContainer.css.map */
