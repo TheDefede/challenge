@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import ProductContainer from './Product/ProductContainer';
 import Navbar from './Navbar/Navbar'
 import Cobertor from './Cobertor'
-import FloatContainer from './Product/FloatContainer';
 import './index.css'
+import Buscador from './Buscador'
 
 
 const faker = window.faker;
@@ -20,17 +20,18 @@ const App = () => {
     return(
         <>
             <Cobertor />
-            <Navbar />
-            <FloatContainer nombre={faker.commerce.productName()} imagen={img()} descripcion={faker.lorem.sentence()} precio={faker.commerce.price()}/>
-
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
-            <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+            <Navbar />     
+            <Buscador />       
+            <div id="productos">
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+                <ProductContainer nombre={faker.commerce.productName()} imagen={img()} alt={faker.commerce.productAdjective()}/>
+            </div>            
         </>
     )
 }

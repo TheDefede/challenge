@@ -2,24 +2,34 @@
     position: fixed;
     z-index:1;
     top: 0;
-    background: linear-gradient(to right, #86cf94 20%, #4cc1de 80%);
+    background: linear-gradient(45deg, #86cf94 10%, #4cc1de 90%);
     width: 100%;
     display:flex;  
     justify-content: space-between;
     align-items: center;   
     color:white;
-    height: 60px;
-      
+    height: 60px;      
     font-size: 1.4rem;    
     font-weight: 500;
+    .menu{
+        width: 25px;   
+        margin-left: 25px;  
+        margin-right: 20px;
+        img{
+            width:100%;
+        }   
+    }
+    .botones{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
     span{
+        font-weight: bold;
         display: flex;
-        div{
-            margin: 0 10px;
-        }
     }
     img{
-        width:40px;
+        width:35px;
         height: auto;
         margin-right: 25px;
     }
